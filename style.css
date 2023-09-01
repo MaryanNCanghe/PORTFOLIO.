@@ -81,17 +81,20 @@ span{
     color: var(--hover-color);
 }
 
-.navlist{
+.navlist,
+.nav{
     display: flex;
 }
 
-.navlist a{
+.navlist a,
+.nav a{
     color:var(--tex-color);
     font-weight: 600;
     padding:10px 20px;
 }
 
-.navlist a:hover{
+.navlist a:hover,
+.nav a:hover{
     color: var(--hover-color);
     text-shadow: 0 0 10px rgba(718, 247, 255, 0.6),
     0 0 20px rgba(18, 247, 255, 0.6),
@@ -103,7 +106,8 @@ span{
     0 0 150px rgba(18, 247, 255, 0.6);
 }
 
-.navlist a.active{
+.navlist a.active,
+.nav a.actve{
     color:var(--hover-color)
 }
 
@@ -651,7 +655,7 @@ position: relative;
 
 .box-2 {
     width: 30%;
-    height: 40vh;
+    height: auto;
     padding: 10px;
     border: 1px solid #ccc;
     background-color:var(--secon-bg-color);
@@ -676,7 +680,7 @@ position: relative;
 
   .ofertas .heading-1 h5{
     text-align: center;
-    margin: 30px;
+    margin: 25px;
     color: var(--hover-color);
   }
   
@@ -686,6 +690,7 @@ position: relative;
     border: 2px solid #000;
     font-size: 25px;
     background: var(--secon-bg-color);
+    height: auto;
   }
 
   .ofertas .heading-1 P{
@@ -694,7 +699,7 @@ position: relative;
     font-size: medium;
     line-height: 30px;
     margin: 15px;
-    padding:0 40px ;
+    padding:20px; 
   }
 
 .ofertas .btn-box{
@@ -1111,7 +1116,7 @@ line-height: 20px;
 @media(max-width:991px){
  header, 
  header.sticky{
-     padding: 15px 5%;
+     padding:   10px 5%;
  }
  footer{
     padding: 15px 5%;
@@ -1183,7 +1188,8 @@ padding: 8px 15px;
     }
 
     .about{
-        flex-direction: column-reverse;
+        flex-direction: column;
+        padding: 10px;
     }
 
     .skill-main{
@@ -1198,12 +1204,12 @@ padding: 8px 15px;
         font-size: .9rem;
     }
 
-
     /*ADMIN-SERVICES*/
     .box-2 {
         display: block;
         width: 90%;
-        height:30vh ;
+        height:auto ;
+        padding: 8px;
     }
 
     .ofertas .btn-box{
@@ -1212,8 +1218,8 @@ padding: 8px 15px;
 
     .ofertas .heading-1{
         text-align: center;
-        margin: 8px;
-        height:70vh ;
+        margin:8px;
+        height:auto ;
       }
     
       .ofertas .heading-1 P{
